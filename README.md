@@ -26,5 +26,22 @@ new STSClient({ logger: new AwsLambdaLogWrapper(log) }).send(new GetCallerIdenti
 
 Writes the following to the console:
 ```json
-{"_logLevel":"info","msg":"aws-sdk: STSClient.GetCallerIdentityCommand","input":{},"output":{"UserId":"...","Account":"...","Arn":"arn:aws:sts::...:assumed-role/..."},"metadata":{"httpStatusCode":200,"requestId":"25fe0f95-7975-443f-bcd9-65321461aa43","attempts":1,"totalRetryDelay":0},"aws-sdk":true,"_tags":[]}
+{
+  "_logLevel": "info",
+  "msg": "aws-sdk: STSClient.GetCallerIdentityCommand",
+  "input": {},
+  "output": {
+    "UserId": "...",
+    "Account": "...",
+    "Arn": "arn:aws:sts::...:assumed-role/..."
+  },
+  "metadata": {
+    "httpStatusCode": 200,
+    "requestId": "25fe0f95-7975-443f-bcd9-65321461aa43",
+    "attempts": 1,
+    "totalRetryDelay": 0
+  },
+  "aws-sdk": true,
+  "_tags": []
+}
 ```
