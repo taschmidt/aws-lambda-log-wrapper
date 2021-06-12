@@ -28,7 +28,7 @@ Writes the following to the console:
 ```json
 {
   "_logLevel": "info",
-  "msg": "AWS: Calling STSClient.GetCallerIdentityCommand",
+  "msg": "AWS: Call STSClient.GetCallerIdentityCommand",
   "clientName":"STSClient",
   "commandName":"GetCallerIdentityCommand",
   "input": {},
