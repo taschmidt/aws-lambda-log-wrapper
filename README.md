@@ -1,4 +1,7 @@
 # aws-lambda-log-wrapper
+
+[![npm version](https://badge.fury.io/js/aws-lambda-log-wrapper.svg)](https://badge.fury.io/js/aws-lambda-log-wrapper)
+
 A tiny little wrapper around the amazing [Lambda Log](https://lambdalog.js.org/) library for use as logging middleware in [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/).
 
 ## Installation
