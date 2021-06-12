@@ -2,7 +2,8 @@
   "name": "aws-lambda-log-wrapper",
   "version": "1.0.3",
   "description": "A tiny package to wrap the awesome LambdaLog library for use with AWS SDK JS v3",
-  "main": "dist/index.js",
+  "main": "./dist/index",
+  "types": "./dist/index",
   "repository": "https://github.com/taschmidt/aws-lambda-log-wrapper",
   "author": "Tim Schmidt <tim@schmidthole.com>",
   "license": "MIT",
@@ -11,7 +12,8 @@
   },
   "scripts": {
     "build": "rm -rf dist/ && tsc",
-    "lint": "eslint src/**/*.ts"
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "yarn run build"
   },
   "lint-staged": {
     "src/**/*.ts": "eslint --fix"
