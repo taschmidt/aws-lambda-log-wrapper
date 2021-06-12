@@ -7,7 +7,7 @@ export class AwsLambdaLogWrapper implements Logger {
     private contentToParams(content: Record<string, unknown>): [string, Record<string, unknown>] {
         const { clientName, commandName } = content;
         content['aws-sdk'] = true;
-        return [`aws-sdk: ${clientName}.${commandName}`, content];
+        return [`AWS: Calling ${clientName}.${commandName}`, content];
     }
 
     debug(content: Record<string, unknown>): void {

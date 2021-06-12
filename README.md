@@ -28,7 +28,9 @@ Writes the following to the console:
 ```json
 {
   "_logLevel": "info",
-  "msg": "aws-sdk: STSClient.GetCallerIdentityCommand",
+  "msg": "AWS: Calling STSClient.GetCallerIdentityCommand",
+  "clientName":"STSClient",
+  "commandName":"GetCallerIdentityCommand",
   "input": {},
   "output": {
     "UserId": "...",
