@@ -4,24 +4,24 @@ import { LambdaLog } from 'lambda-log';
 export class AwsLambdaLogWrapper implements Logger {
     constructor(public log: LambdaLog) { }
 
-    private contentToParams(content: any): [string, object] {
+    private contentToParams(content: Record<string, unknown>): [string, Record<string, unknown>] {
         const { clientName, commandName, ...meta } = content;
         return [`aws-sdk: ${clientName}.${commandName}`, meta];
     }
 
-    debug(content: object): void {
+    debug(content: Record<string, unknown>): void {
         this.log.debug(...this.contentToParams(content));
     }
 
-    info(content: object): void {
+    info(content: Record<string, unknown>): void {
         this.log.info(...this.contentToParams(content));
     }
     
-    warn(content: object): void {
+    warn(content: Record<string, unknown>): void {
         this.log.warn(...this.contentToParams(content));
     }
     
-    error(content: object): void {
+    error(content: Record<string, unknown>): void {
         this.log.error(...this.contentToParams(content));
     }
 }
