@@ -9,6 +9,9 @@ jobs:
         with:
           node-version: 10
       - run: yarn
-      - uses: JS-DevTools/npm-publish@v1
+      - name: Automated Version Bump
+        uses: phips28/gh-action-bump-version@v8.0.18
+      - name: NPM publish
+        uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
