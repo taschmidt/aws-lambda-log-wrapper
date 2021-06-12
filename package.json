@@ -1,6 +1,6 @@
 {
   "name": "aws-lambda-log-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tiny package to wrap the awesome LambdaLog library for use with AWS SDK JS v3",
   "main": "dist/index.js",
   "repository": "https://github.com/taschmidt/aws-lambda-log-wrapper",
