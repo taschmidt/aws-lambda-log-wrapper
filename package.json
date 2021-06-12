@@ -4,7 +4,7 @@
   "description": "A tiny package to wrap the awesome LambdaLog library for use with AWS SDK JS v3",
   "main": "dist/index.js",
   "repository": "https://github.com/taschmidt/aws-lambda-log-wrapper",
-  "author": "Tim Schmidt",
+  "author": "Tim Schmidt <tim@schmidthole.com>",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
