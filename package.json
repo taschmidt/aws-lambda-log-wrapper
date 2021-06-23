@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@aws-sdk/types": "^3.18.0",
-    "json-truncate": "3.0.0",
-    "lambda-log": "^3.0.0"
+    "json-truncate": "^3.0.0",
+    "lambda-log": ">=3.0.0"
   },
   "devDependencies": {
     "@aws-sdk/client-sts": "^3.18.0",
